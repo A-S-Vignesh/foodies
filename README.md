@@ -1,6 +1,6 @@
 # Foodie - Premium Food Delivery Application 🍔🍕
 
-![Foodie Banner](public/banner-placeholder.png)
+![Foodie Banner](public/screenshots/1.png)
 
 > A modern, full-stack food ordering platform built with Next.js 16, TypeScript, and MongoDB. Designed with a premium, mobile-responsive UI similar to top-tier delivery apps like Swiggy and Zomato.
 
@@ -42,7 +42,7 @@
 ## 📂 Project Structure
 
 ```bash
-foodrestaurent/
+foodie/
 ├── src/
 │   ├── app/              # Next.js App Router pages
 │   │   ├── admin/        # Admin dashboard routes
@@ -75,7 +75,7 @@ Follow these steps to set up the project locally.
 1.  **Clone the repository**
 
     ```bash
-    git clone https://github.com/yourusername/foodrestaurent.git
+    git clone https://github.com/A-S-Vignesh/foodrestaurent.git
     cd foodrestaurent
     ```
 
