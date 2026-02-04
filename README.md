@@ -1,6 +1,6 @@
 # Foodie - Premium Food Delivery Application 🍔🍕
 
-![Foodie Banner](public/screenshots/1.png)
+![Foodie Banner](public/images/screenshots/1.png)
 
 > A modern, full-stack food ordering platform built with Next.js 16, TypeScript, and MongoDB. Designed with a premium, mobile-responsive UI similar to top-tier delivery apps like Swiggy and Zomato.
 
