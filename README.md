@@ -1,36 +1,113 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Foodie - Premium Food Delivery Application 🍔🍕
 
-## Getting Started
+![Foodie Banner](public/banner-placeholder.png)
 
-First, run the development server:
+> A modern, full-stack food ordering platform built with Next.js 16, TypeScript, and MongoDB. Designed with a premium, mobile-responsive UI similar to top-tier delivery apps like Swiggy and Zomato.
+
+## 🚀 Introduction
+
+**Foodie** is a feature-rich web application that allows users to browse food items, filter by categories, and manage orders. It features a robust admin dashboard for managing restaurants and menu items, all wrapped in a beautiful, highly animated user interface.
+
+## ✨ Features
+
+### 👤 User Interface
+
+- **Dynamic Home Page**: Featuring horizontal scrollable categories, "Best Sellers", "Chef's Specials", and a high-impact "Mega Combo" promo section.
+- **Advanced Menu Filtering**: Filter by Category (Burgers, Pizza, etc.), Sub-category (Veg/Non-Veg), and toggle specific dietary preferences.
+- **Search & Sort**: Real-time search for food items and sorting by Price, Rating, etc.
+- **Premium Aesthetics**: Glassmorphism effects, smooth transitions (`tw-animate-css`), and responsive design for all devices.
+- **About Us**: Dedicated page telling the brand story with visual storytelling.
+
+### 🛡️ Admin Dashboard
+
+- **Restaurant Management**: Add, edit, and delete restaurant/menu details.
+- **Analytics**: Data visualization using `recharts` for sales and order trends.
+
+### 🔐 Authentication & Security
+
+- **Secure Auth**: Powered by **NextAuth.js** for secure user sessions.
+- **Database**: Robust data modeling with **MongoDB** and **Mongoose**.
+
+## 🛠️ Tech Stack
+
+- **Framework**: [Next.js 16 (App Router)](https://nextjs.org/)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/), `tw-animate-css`
+- **UI Components**: [Shadcn UI](https://ui.shadcn.com/) (Radix UI primitives)
+- **Database**: [MongoDB](https://www.mongodb.com/) with [Mongoose](https://mongoosejs.com/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **State/Data**: React Hooks, TanStack Query (optional/ready)
+- **Charts**: [Recharts](https://recharts.org/)
+
+## 📂 Project Structure
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+foodrestaurent/
+├── src/
+│   ├── app/              # Next.js App Router pages
+│   │   ├── admin/        # Admin dashboard routes
+│   │   ├── api/          # Backend API routes
+│   │   ├── menu/         # Menu page
+│   │   ├── about/        # About Us page
+│   │   └── page.tsx      # Home page
+│   ├── components/       # Reusable React components
+│   │   ├── ui/           # Shadcn UI components
+│   │   └── ...
+│   ├── models/           # Mongoose schemas (Order, MenuItem, etc.)
+│   ├── lib/              # Utility functions and DB connection
+│   └── data/             # Mock data for development
+├── public/               # Static assets
+└── package.json          # Project dependencies
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🏁 Getting Started
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Follow these steps to set up the project locally.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Prerequisites
 
-## Learn More
+- Node.js (v18+)
+- pnpm (recommended) or npm/yarn
+- MongoDB URI (local or Atlas)
 
-To learn more about Next.js, take a look at the following resources:
+### Installation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1.  **Clone the repository**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+    ```bash
+    git clone https://github.com/yourusername/foodrestaurent.git
+    cd foodrestaurent
+    ```
 
-## Deploy on Vercel
+2.  **Install dependencies**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    ```bash
+    pnpm install
+    # or
+    npm install
+    ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3.  **Set up Environment Variables**
+    Create a `.env` file in the root directory:
+
+    ```env
+    MONGODB_URI=your_mongodb_connection_string
+    NEXTAUTH_SECRET=your_nextauth_secret
+    NEXTAUTH_URL=http://localhost:3000
+    ```
+
+4.  **Run the development server**
+
+    ```bash
+    pnpm run dev
+    ```
+
+5.  Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## 🤝 Contributing
+
+Contributions are welcome! Please fork the repository and submit a pull request for any enhancements or bug fixes.
+
+## 📄 License
+
+This project is licensed under the MIT License.
